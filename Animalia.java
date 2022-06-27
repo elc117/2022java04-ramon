@@ -39,6 +39,7 @@ class Golfinho extends Mamifero {
     }
 }
 
+<<<<<<< HEAD
 class Ave extends Animalia {
     private int especies = 10000;
     private int quant_pernas = 2;
@@ -76,3 +77,46 @@ class Pinguim extends Ave {
         super(true, 0);
     }
 }
+=======
+class Carnivoro extends Animalia{
+    protected int n_dentes;
+    protected float tamanho_dente;
+    protected String carne_favorita;
+    protected int idade;
+    public void setIdade(int idade){
+        this.idade = idade;
+    }
+    public int getIdade(){
+        return idade;
+    }
+    public Carnivoro(){
+
+    }
+    public void setCarne_favorita(String carne_favorita){
+        this.carne_favorita = carne_favorita;
+    }
+    public String getCarne_favorita(){
+        return carne_favorita;
+    }
+    public void setN_dentes(int n_dentes){
+        this.n_dentes = n_dentes;
+    }
+    public int getN_dentes(){
+        return n_dentes;
+    }
+}
+
+class TRex extends Carnivoro{
+    Bool vivo;
+    public void setVivo(Bool vivo) {
+        this.vivo = vivo;
+    }
+    public Bool getVivo() {
+        return vivo;
+    }
+    public Trex(){
+        this.n_dentes = 60;
+        this.tamanho_dente = 0.20;
+    }
+}
+>>>>>>> cd1168cb6df4b15f9953b2e55678a7439e142b0e
